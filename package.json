@@ -36,5 +36,9 @@
     "babel-register": "^6.7.2",
     "mocha": "^2.4.5",
     "nodemon": "^1.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/getguesstimate/simulation-cloud.git"
   }
 }
