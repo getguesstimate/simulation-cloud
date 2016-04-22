@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon lib/index.js --exec babel-node",
+    "debug": "nodemon --debug lib/index.js --exec babel-node",
     "build": "babel lib -d dist",
     "serve": "node dist/index.js",
     "test": "mocha --compilers js:babel-register"
@@ -18,8 +19,12 @@
   "author": "Matthew McDermott",
   "license": "ISC",
   "dependencies": {
+    "babel-cli": "^6.7.7",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-stage-2": "^6.5.0",
     "body-parser": "^1.15.0",
     "cors": "^2.7.1",
+    "discrete-sampling": "^1.0.2",
     "express": "^4.13.4",
     "financejs": "^3.0.0",
     "jstat": "^1.5.2",
@@ -28,11 +33,12 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "babel-cli": "^6.7.5",
-    "babel-preset-es2015": "^6.6.0",
-    "babel-preset-stage-2": "^6.5.0",
     "babel-register": "^6.7.2",
     "mocha": "^2.4.5",
     "nodemon": "^1.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/getguesstimate/simulation-cloud.git"
   }
 }
